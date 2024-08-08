@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="auther" content="Samer Saida">
+  <meta name="description" content="description words for the web site">
+  <meta name="keywords" content="key words for search to this web site">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="/images/cat.jpg" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dave Gray HTML Forms</title>
+</head>
+<body>
+  <article class="contact">
+    <h2>Contact form</h2>
+    <p>fill inforation in this form:</p>
+    <form action="https://httpbin.org/get" method="get">
+      <p>
+        <label for="firstname">First Name</label>
+        <input type="text" name="firstname" id="firstname" autocomplete="on" autofocus placeholder="First Name" required>
+      </p>
+      <p>
+        <label for="lastname">Last Name</label>
+        <input type="text" name="lastname" id="lastname" autocomplete="on" placeholder="Las Name" required>
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" autocomplete="on" placeholder="Email" required>
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password">
+      </p>
+      <p>
+        <label for="age">Date</label>
+        <input type="number" name="age" id="age" min="1900" max="2024" step="10" placeholder="Age">
+      </p>
+      <p>
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" placeholder="Date" required>
+      </p>
+      <p>
+        <label for="tel">Tel</label>
+        <input type="tel" name="tel" id="tel" placeholder="Telephone" pattern="{0-9}[3]-{0-9}[3]{0-9}[4]">
+      </p>
+      <p>
+        <label for="coffee">Favorate Coffee</label>
+        <select name="coffee" id="coffee">
+          <option disabled selected>Choose Coffee</option>
+          <optgroup label="Italian Coffee">
+            <option value="capputino">Capputino</option>
+            <option value="shoko">Shoko</option>
+            <option value="lattee">Lattee</option>
+          </optgroup>
+          <optgroup label="Arabic Coffee">
+            <option value="sadah">Sadah</option>
+            <option value="black-coffee">Black Coffee</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <p>Favorate Food</p>
+        
+      </p>
+    </form>
+  </article>
+</body>
+</html>
