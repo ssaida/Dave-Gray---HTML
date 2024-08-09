@@ -7,3 +7,7 @@ body{
   background-color: silver;
   font-family: sans-serif;
 }
+label{
+  width: 100px;
+  display: inline-block;
+}
