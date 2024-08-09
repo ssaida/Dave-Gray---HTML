@@ -11,3 +11,9 @@ label{
   width: 100px;
   display: inline-block;
 }
+table, thead, caption, th, td{
+  border: 1px solid #000;
+}
+tfoot{
+  text-align: center ;
+}
