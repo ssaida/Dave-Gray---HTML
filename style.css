@@ -17,3 +17,15 @@ table, thead, caption, th, td{
 tfoot{
   text-align: center ;
 }
+thead:first-child{
+  background-color: #fff;
+}
+tr:nth-child(even){
+  background-color: #fff;
+}
+a[href$=".com"]{
+  background-color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
