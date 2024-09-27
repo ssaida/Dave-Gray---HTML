@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="forms.css">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <header>
+    <h2>HTML Forms</h2>
+  </header>
+  <article>
+    <h2>Contact me</h2>
+    <p>Html Form inputs</p>
+    <form action="https://httpbin.org.il/get" method="get">
+      <p>
+        <label for="firstName">First Name</label>
+        <input type="text" name="firstName" id="firstName" required autocomplete="on" placeholder="First Name" autofocus>
+      </p>
+      <p>
+        <label for="lastName">Last Name</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required auto complete="on">
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required autocomplete="on">
+      </p>
+      <p>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+      </p>
+      <p>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+      </p>
+      <p>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="Age">
+      </p>
+      <p>
+        <label for="decade">Decade</label>
+        <input type="number" name="decade" id="decade" min="1900" max="2020">
+      </p>
+      <p>
+        <label for="coffee">Coffee</label>
+        <select name="coffee" id="coffee">
+          <option disabled selected>Chosee Coffee</option>
+          <optgroup label="Regular">
+            <option value="Regular">Regular</option>
+            <option value="sadah">sadah</option>
+          </optgroup>
+          <optgroup label="Oversees">
+            <option value="capputino">capputino</option>
+            <option value="americano">americano</option>
+            <option value="reverse">reverse</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <label for="food">Food</label>
+        <input type="radio" name="food" id="food" value="Pizza">Pizza
+        <input type="radio" name="food" id="food" value="Rice">Rice
+        <input type="radio" name="food" id="food" value="Mashawe">Mashawe
+      </p>
+      <p>
+        <label for="pets">Pets</label>
+        <input type="checkbox" name="pets" id="pets" value="dog">Dog
+        <input type="checkbox" name="pets" id="pets" value="cat">Cat
+        <input type="checkbox" name="pets" id="pets" value="monkey">Monkey
+      </p>
+      <p>
+        <label for="bio">Bio</label>
+        <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Biography"></textarea>
+      </p>
+      <p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </p>
+    </form>
+  </article>
+</body>
+</html>
