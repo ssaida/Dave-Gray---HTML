@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: silver;
+  font-family: sans-serif;
+}
+figure{
+  display: inline-block;
+  border: 1px dotted #333;
+  padding: 2px;
+}
+figcaption{
+  text-align: center;
+}
+table{
+  width: 400px;
+  text-align: center;
+}
+table, caption, th, td{
+  border: 1px solid #333;
+  padding: 2px;
+}
+tfoot{
+  text-align: center;
+  font-weight: bold;
+}
+label{
+  display: block;
+}
+input{
+  width: 200px;
+  padding: 4px;
+}
+textarea{
+  width: 200px;
+}
+fieldset{
+  width: 300px;
+  border: 2px solid;
+  padding: 4px;
+}
+button{
+  padding: 6px 10px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
