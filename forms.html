@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="forms.css">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <h1>HTML Forms</h1>
+  <form action="https:httpbin.org/get" method="get">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" autocomplete="on" autofocus required placeholder="Name">
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email" required autocomplete="on">
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="Password">
+    </p>
+    <p>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" placeholder="Age" min="10" max="69" value="18">
+    </p>
+    <p>
+      <label for="date">Date</label>
+      <input type="date" name="date" id="date" min="1900">
+    </p>
+    <p>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" placeholder="Phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+    </p>
+    <p>
+      <label for="coffee">Coffee</label>
+      <select name="coffee" id="coffee">
+        <option disabled selected>Choose Coffee</option>
+        <optgroup label="american">
+          <option value="lattee">Lattee</option>
+          <option value="capputino">Capputino</option>
+        </optgroup>
+        <optgroup label="arab">
+          <option value="sadah">Sadah</option>
+          <option value="black">Black</option>
+        </optgroup>
+      </select>
+    </p>
+    <p>
+      <h3>Choose Pet</h3>
+      <label for="dog">Dog</label>
+      <input type="radio" name="pet" id="dog" value="dog">
+      <label for="cat">Cat</label>
+      <input type="radio" name="pet" id="cat" value="cat">
+      <label for="snake">Snake</label>
+      <input type="radio" name="pet" id="snake" value="snake">
+    </p>
+
+    <h3>Food</h3>
+    <label for="mashawe">Mashawe</label>
+    <input type="checkbox" name="Food" id="mashawe" value="mashawe">
+    <label for="rice">Rice</label>
+    <input type="checkbox" name="Food" id="rice" value="rice">
+    <label for="banana">Banana</label>
+    <input type="checkbox" name="Food" id="banana" value="banana">
+
+    <p>
+      <label for="bio">Bio</label>
+      <textarea name="bio" id="bio" cols="30" rows="10" placeholder="Enter Bio"></textarea>
+    </p>
+    <p>
+      <label for="Submit">Submit</label>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </p>
+  </form>
+</body>
+</html>
