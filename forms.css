@@ -1,0 +1,22 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: silver;
+  font-family: sans-serif;
+}
+label{
+  width: 200px;
+  margin: 8px 0;
+  /* display: inline-block; */
+}
+input{
+  padding: 4px 10px;
+}
+fieldset{
+  width: 200px;
+  margin: 8px 0;
+  padding: 10px;
+}

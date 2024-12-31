@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="forms.css">
+  <title>HTML Forms</title>
+</head>
+<body>
+  <h3>HTML Forms</h3>
+  <form action="https://httpbin.org/get" method="get">
+    <p>
+      <label for="name">Name</label>
+      <input type="text" name="name" id="name" placeholder="Name" required autocomplete="on" autofocus>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="Email" autocomplete="on" required>
+    </p>
+    <p>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" placeholder="Password" required>
+    </p>
+    <p>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" placeholder="Phone" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    </p>
+    <p>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age" placeholder="Age">
+    </p>
+    <p>
+      <label for="decade">Decade</label>
+      <input type="number" name="decade" id="decade" placeholder="Decade" min="1900" max="2020" step="10" value="1980">
+    </p>
+    <!-- <p>
+      <label for="coffee">Favorate Coffee</label>
+      <select name="coffee" id="coffee">
+        <option selected disabled>Choose Favorate Coffee</option>
+        <optgroup label="Italian Coffee">
+          <option value="capputino">Capputino</option>
+          <option value="mocca">Mocca</option>
+          <option value="americano">Americano</option>
+        </optgroup>
+        <optgroup label="Arabic Coffee">
+          <option value="arabic coffee">Arabic Coffee</option>
+          <option value="sadah">Sadah</option>
+        </optgroup>
+      </select>
+    </p> -->
+    <p>
+      <label for="coffee">Favorate Coffee</label>
+      <input type="text" name="coffee" id="coffee" list="coffee-list">
+      <datalist id="coffee-list">
+        <option value="coffee">coffee</option>
+        <option value="lattee">Lattee</option>
+        <option value="sadah">Sadah</option>
+      </datalist>
+    </p>
+    <p>
+      <fieldset>
+        <legend>Food</legend>
+        <label for="taco">Taco</label>
+        <input type="radio" name="food" id="taco" value="taco">
+        <label for="rice">Rice</label>
+        <input type="radio" name="food" id="rice" value="rice">
+        <label for="meet">Meet</label>
+        <input type="radio" name="food" id="meet" value="meet">
+      </fieldset>
+    </p>
+    <fieldset>
+      <legend>Bio</legend>
+      
+      <textarea name="bio" id="bio" cols="30" rows="10"  placeholder="Enter bio..."></textarea>
+    </fieldset>
+    <fieldset>
+      <legend>Send & Reset</legend>
+      <button type="submit">Submit</button>
+      <button type="reset">Reset</button>
+    </fieldset>
+
+  </form>
+</body>
+</html>
