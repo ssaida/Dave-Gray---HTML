@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="stylesheet" href="sstyle.css">
+  <link rel="shortcut icon" href="/images/cat.jpg" type="image/x-icon">
+  <title>HTML Project - Contact</title>
+</head>
+<body>
+  <header>
+    <h1>Mario Club Project - Contact</h1>
+    <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="./#about">About <abbr title="Mario Club Project">MCP</abbr></a></li>
+        <li><a href="./#menu">Menu</a></li>
+        <li><a href="/HTML - DAve Gray/hours.html">Hours</a></li>
+      </ul>
+    </nav>
+    <figure>
+      <img src="/images/thumb-2.png" alt="mario club thumb-2" title="mario club thumb-2" width="400px">
+    </figure>
+  </header>
+  <main>
+    <section id="contact-form">
+      <form action="http://httpbin.org/get" method="get">
+        <p>
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" placeholder="Name" required autocomplete="on" autofocus>
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" name="email" id="email" autocomplete="on" required placeholder="Email">
+        </p>
+        <p>
+          <label for="bio">Bio</label>
+          <textarea name="bio" id="bio" cols="30" rows="10"></textarea>
+        </p>
+      </form>
+      <fieldset>
+        <legend>Contact details</legend>
+        <address>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+          <p>Lorem ipsum dolor sit amet.</p>
+          <a href="tel:+055555555">Mobile</a>
+          <a href="mailto:info@project">Mobile</a>
+        </address>
+      </fieldset>
+    </section>
+  </main>
+  <footer>
+    <p>Mario club copyright &copy;</p>
+    <p><a href="#">Top</a></p>
+  </footer>
+</body>
+</html>
