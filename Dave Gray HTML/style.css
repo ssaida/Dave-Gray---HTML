@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: silver;
+  font-family: sans-serif;
+}
+section{
+  border: 1px dotted #333;
+  display: inline-block;
+  padding: 2px;
+}
+section figcaption{
+  text-align: center;
+}
+table, tr, th, td, caption{
+  border: 1px solid #333;
+}
+label{
+  display: block;
+}
+form{
+  padding: 8px;
+}
+input, textarea{
+  width: 300px;
+  padding: 4px 10px;
+}
+button{
+  background-color: #333;
+  color: #fff;
+  padding: 4px 10px;
+  border: none;
+  border-radius: 2px;
+}
+.location{
+  display: block;
+}
