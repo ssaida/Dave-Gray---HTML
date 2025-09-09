@@ -2,13 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="description>
+  <meta name="keywords" content="keywords">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="forms.css">
-  <title>HTML Forms</title>
+  <title>Dave Gray - HTML Forms</title>
 </head>
 <body>
-  <h3>HTML Forms</h3>
-  <form action="https://httpbin.org/get" method="get">
+  <h2>Dave Gray - HTML Forms</h2>
+  <form action="https://httpbin.org" method="get">
     <p>
       <label for="name">Name</label>
       <input type="text" name="name" id="name" placeholder="Name" required autocomplete="on" autofocus>
@@ -22,63 +24,63 @@
       <input type="password" name="password" id="password" placeholder="Password" required>
     </p>
     <p>
-      <label for="phone">Phone</label>
-      <input type="tel" name="phone" id="phone" placeholder="Phone" autocomplete="on" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-    </p>
-    <p>
       <label for="age">Age</label>
       <input type="number" name="age" id="age" placeholder="Age">
     </p>
     <p>
-      <label for="decade">Decade</label>
-      <input type="number" name="decade" id="decade" placeholder="Decade" min="1900" max="2020" step="10" value="1980">
+      <label for="date">Date</label>
+      <input type="number" name="date" id="date" min="1900" max="2030" step="10" placeholder="Date">
     </p>
-    <!-- <p>
-      <label for="coffee">Favorate Coffee</label>
+    <p>
+      <label for="phone">Phone</label>
+      <input type="tel" name="phone" id="phone" placeholder="Phone">
+    </p>
+    <p>
+      <label for="food">Food</label>
+      <label for="rice">Rice</label>
+      <input type="checkbox" name="food" id="rice" value="rice">
+      <label for="mashawe">Mashawe</label>
+      <input type="checkbox" name="food" id="mashawe" value="Mashawe">Mashawe
+      <label for="bamba">Bamba</label>
+      <input type="checkbox" name="food" id="bamba" value="bamba">Bamba
+      <label for="flafel">Flafel</label>
+      <input type="checkbox" name="food" id="flafel">Flafel
+      <label for="humus">Humus</label>
+      <input type="checkbox" name="food" id="humus">Humus
+    </p>
+    <p>
+      <label for="coffee">Coffee</label>
       <select name="coffee" id="coffee">
-        <option selected disabled>Choose Favorate Coffee</option>
-        <optgroup label="Italian Coffee">
+        <option selected disabled>Choose Coffee</option>
+        <optgroup label="Arab">
+          <option value="sadah">Sadah</option>
+          <option value="black">Black</option>
+        </optgroup>
+        <optgroup label="Italian">
           <option value="capputino">Capputino</option>
-          <option value="mocca">Mocca</option>
           <option value="americano">Americano</option>
         </optgroup>
-        <optgroup label="Arabic Coffee">
-          <option value="arabic coffee">Arabic Coffee</option>
-          <option value="sadah">Sadah</option>
-        </optgroup>
+        <option value="other">Other</option>
       </select>
-    </p> -->
-    <p>
-      <label for="coffee">Favorate Coffee</label>
-      <input type="text" name="coffee" id="coffee" list="coffee-list">
-      <datalist id="coffee-list">
-        <option value="coffee">coffee</option>
-        <option value="lattee">Lattee</option>
-        <option value="sadah">Sadah</option>
-      </datalist>
     </p>
     <p>
       <fieldset>
-        <legend>Food</legend>
-        <label for="taco">Taco</label>
-        <input type="radio" name="food" id="taco" value="taco">
-        <label for="rice">Rice</label>
-        <input type="radio" name="food" id="rice" value="rice">
-        <label for="meet">Meet</label>
-        <input type="radio" name="food" id="meet" value="meet">
+        <legend>Pet</legend>
+        <label for="dog">Dog</label>
+        <input type="radio" name="pet" id="dog" value="dog">
+        <label for="cat">Cat</label>
+        <input type="radio" name="pet" id="cat" value="cat">
+        <label for="snake">Snake</label>
+        <input type="radio" name="pet" id="snake" value="snake">
       </fieldset>
     </p>
-    <fieldset>
-      <legend>Bio</legend>
-      
-      <textarea name="bio" id="bio" cols="30" rows="10"  placeholder="Enter bio..."></textarea>
-    </fieldset>
-    <fieldset>
-      <legend>Send & Reset</legend>
-      <button type="submit">Submit</button>
-      <button type="reset">Reset</button>
-    </fieldset>
 
+    <p>
+      <label for="message">Message</label>
+      <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter Message..."></textarea>
+    </p>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
   </form>
 </body>
 </html>

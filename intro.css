@@ -7,7 +7,3 @@ body{
   background-color: silver;
   font-family: sans-serif;
 }
-table, caption, th, td{
-  border: 1px solid #333;
-  padding: 4px;
-}
