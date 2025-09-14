@@ -1,0 +1,27 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: silver;
+  font-family: sans-serif;
+}
+label{
+  display: block;
+}
+input, textarea{
+  display: block;
+  width: 200px;
+}
+input[type="radio"]{
+  width: 1  0;
+}
+button{
+  background-color: rgb(48, 42, 42);
+  color: #fff;
+  border: none;
+  padding: 4px 10px;
+  margin: 4px 0;
+  border-radius: 2px;
+}
